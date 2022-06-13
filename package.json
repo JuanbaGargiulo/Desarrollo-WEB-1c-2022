@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "type1": "commonjs",
+
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-myconnection": "^1.0.4",
+    "mssql": "^8.1.2",
+    "mysql": "^2.18.1",
+    "node-mysql": "^0.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

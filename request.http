@@ -1,0 +1,49 @@
+@api = http://localhost:1411/conciertos
+@api2 = http://localhost:1411/conciertos/entradas
+
+
+### Traer todos los conciertos de la base
+GET {{api}}
+
+### Crear un nuevo concierto
+POST {{api}}
+Content-Type: application/json
+
+{
+    "Nombre_Artista": "Maluma",
+    "Fecha": "2022-11-15",
+    "Locacion": "River"
+    
+    
+}
+
+### Buscar un concierto por su id
+GET {{api}}/3
+
+### Eliminando un concierto
+DELETE {{api}}/1
+
+### Actualizar un concierto
+PUT {{api}}/3
+Content-Type: application/json
+
+{ 
+    "Nombre_Artista": "Bizzarap",
+    "Fecha": "2022-11-14",
+    "Locacion": "Estadio Velez"
+}
+
+//Entradas
+
+### Generar una entrada
+POST {{api2}}/8
+Content-Type: application/json
+
+{ 
+  "Nombre": "Juan",
+  "Apellido": "Gargiulo",
+  "Sector": "2D"
+}
+
+
+ 
